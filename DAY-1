@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int X,T,i=0;
+    cout<<"Enter the number of days : ";
+    cin>>X;
+    while(i!=X){
+    cout<<"Enter the water that Chef drink :";
+    cin>>T;
+    if(T>=2000){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+    i++;
+}
+	return 0;
+}
