@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int T;
+	cin>>T;
+	if (T>=1 && T<=100)
+	{
+	    while(T--)
+	    {
+	        int x,y,z,count=0;;
+	        cin>>x>>y>>z;
+	        int choco=x*5+y*10;
+	        for(int i=choco;i>=z;i=i-z)
+	        {
+	            count++;
+	        }
+	        cout<<count<<endl;
+	    }
+	}
+	return 0;
+}
