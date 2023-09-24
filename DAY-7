@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t; // Number of test cases
+	cin>>t;
+	for (int i=0; i<t; i++)
+	{
+	    int x ; // for Following
+	    int y ; // for Follower
+	    cin>>x>>y;
+	    
+	        if (x<=10*y)
+	        {
+	            cout<<"NO"<<endl;
+	        }
+	        
+	        else 
+	        {
+	            cout << "YES"<<endl;
+	        }
+	    
+	}
+	return 0;
+}
