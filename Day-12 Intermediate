@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int A, B;
+        cin >> A >> B;
+        int moves = 1;
+        while (true) {
+            if (moves % 2 == 1) {
+                A -= moves;
+                if (A < 0) {
+                    cout << "Bob" << endl;
+                    break;
+                }
+            } else {
+                B -= moves;
+                if (B < 0) {
+                    cout << "Limak" << endl;
+                    break;
+                }
+            }
+            moves++;
+        }
+    }
+    return 0;
+}
